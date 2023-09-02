@@ -1,0 +1,44 @@
+/* Custom CSS for takla */
+
+.takla-subheader{
+    color: #fff;
+}
+
+.takla-intro{
+    letter-spacing: 6px !important;
+}
+
+.takla-email{
+    display:block;
+}
+
+.contact-main a {
+    display: block !important;
+}
+
+.takla-header{
+    line-height: 12rem !important;
+    font-size: 15.2rem !important;
+}
+
+@media (max-width: 768px){
+    .takla-header{
+        font-size: 10rem !important;  
+    }
+    .takla-header br{
+        display: block !important;
+    }
+}
+
+@media (max-width: 425px){
+    .takla-header{
+        font-size: 8rem !important;  
+    }
+}
+
+@media (max-width: 320px){
+    .takla-header{
+        font-size: 5rem !important;  
+        line-height: 6rem !important;
+    }
+}
