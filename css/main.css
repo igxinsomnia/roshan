@@ -3346,7 +3346,7 @@ input::-moz-focus-inner {
 }
 
 .contact-social ul li::before {
-  content: "";
+  content: " ";
   color: #ffffff;
   margin-left: 15px;
   margin-right: 4px;
