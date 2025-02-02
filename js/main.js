@@ -130,17 +130,20 @@
    /* Masonry
     * ---------------------------------------------------- */ 
     var ssMasonryFolio = function () {
-        
         var containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
             containerBricks.masonry({
                 itemSelector: '.masonry__brick',
+                columnWidth: '.masonry__brick', // Make sure Masonry uses brick width
+                percentPosition: true,
+                gutter: 0,  // Space between columns
                 resize: true
             });
         });
-
     };
+
+
 
 
    /* photoswipe
