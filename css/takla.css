@@ -20,6 +20,21 @@
     line-height: 12rem !important;
     font-size: 15.2rem !important;
 }
+.masonry {
+    display: flex; /* Helps keep the bricks aligned */
+    flex-wrap: wrap; /* Prevents breaking to a new line */
+    width:100%
+}
+
+.masonry__brick {
+    width: 25%;  /* Forces 4 columns */
+    float: left; /* Ensures bricks align side by side */
+    box-sizing: border-box; /* Prevents extra spacing issues */
+    gap:0;
+}
+
+
+
 
 @media (max-width: 768px){
     .takla-header{
@@ -27,6 +42,9 @@
     }
     .takla-header br{
         display: block !important;
+    }
+    .masonry__brick, .grid-sizer {
+        width: 50%; /* Switch to 2 columns on smaller screens */
     }
 }
 
@@ -41,4 +59,8 @@
         font-size: 5rem !important;  
         line-height: 6rem !important;
     }
+}
+
+@media screen and (max-width: 768px) {
+
 }
